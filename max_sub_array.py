@@ -40,8 +40,9 @@ def find_max_subarray(array, low, high):
     Args: a array (which is a list of integers) and two integer values low & high 
           to calculate mid.
 
-    Base Case: if high == low i.e., we have reached an array of length 1, containing only a single element.
-               This single element is the only possible total maximum sum, so return that same element.
+    Base Case: if high == low i.e., we have reached an array of length 1, 
+               containing only a single element. This single element is 
+               the only possible total maximum sum, so return that same element.
 
     Returns: the total sum of the maximum sub-array, two pointers to retrieve the max sub-array.
     """
