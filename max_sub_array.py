@@ -1,8 +1,8 @@
-from math import inf # importing inf to assign variables with -infinity.
-
 """
 This code will be solving maximum subarray problem by using a divide and conquer algorithm.
 """
+from math import inf # importing inf to assign variables with -infinity.
+
 def max_crossing_subarray(array, low, mid, high):
     """
     max_crossing_subarray is a function which will return maximum sum
@@ -57,10 +57,9 @@ def find_max_subarray(array, low, high):
     # Determine which subarray has the maximum sum
     if left_sum >= right_sum and left_sum >= cross_sum:
         return left_sum, left_sub_max_left, left_sub_max_right
-    elif right_sum >= left_sum and right_sum >= cross_sum:
+    if right_sum >= left_sum and right_sum >= cross_sum:
         return right_sum, right_sub_max_left, right_sub_max_right
-    else:
-        return cross_sum, cross_max_left, cross_max_right
+    return cross_sum, cross_max_left, cross_max_right
 
 
 # Test the implementation
