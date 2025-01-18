@@ -10,7 +10,8 @@ def max_crossing_subarray(array, low, mid, high):
 
     Args: array(which is a list containing integers) and three pointers low, mid & high.
 
-    Returns: an integer which is the sum of the maximum total sum in the left sub-array & maximum total sum in the right sub-array.
+    Returns: an integer which is the sum of the maximum total sum in the left sub-array & 
+             maximum total sum in the right sub-array.
     """
     left_total = -inf  # initializing left_total with -infinity.
     add_left = 0
@@ -33,9 +34,11 @@ def max_crossing_subarray(array, low, mid, high):
 
 def find_max_subarray(array, low, high):
     """
-    find_max_subarray is the function which will divide the array recursively and find the maximum sub-array.
+    find_max_subarray is the function which will divide the array recursively 
+    and find the maximum sub-array.
 
-    Args: a array (which is a list of integers) and two integer values low & high to calculate mid.
+    Args: a array (which is a list of integers) and two integer values low & high 
+          to calculate mid.
 
     Base Case: if high == low i.e., we have reached an array of length 1, containing only a single element.
                This single element is the only possible total maximum sum, so return that same element.
